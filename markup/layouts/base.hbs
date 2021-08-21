@@ -1,6 +1,6 @@
 <!-- Doctype HTML5 -->
 <!doctype html>
-<html lang="{{#if language}}{{language}}{{else}}en{{/if}}" dir="ltr">
+<html dir="ltr">
 {{#block "head"}}
   <head>
     {{#block "meta"}}
@@ -25,15 +25,8 @@
 
 {{#block "body"}}
   <body class="{{bodyclass}}">
-    {{#block "header"}}
-    {{> header}}
-    {{/block}}
 
     {{#block "main"}}
-    {{/block}}
-
-    {{#block "footer"}}
-    {{> footer}}
     {{/block}}
 
     {{#block "scripts"}}

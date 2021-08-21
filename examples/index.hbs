@@ -1,9 +1,16 @@
 ---
+alternates:
+  - language: es
+    uri: /es
+  - language: fr
+    uri: /fr
 bodyclass: index
 language: en
 meta:
   author: Author Name
   description: Some meta description
+  keywords: Some, Meta, Keywords
+  robots: index, follow
 scripts:
   - ../typescript/index.ts
 stylesheets:
@@ -17,7 +24,11 @@ uri: /
     <main>
       <h1>Welcome from index.hbs</h1>
       <a href="./about.hbs">about page</a>
+      {{#isnt NODE_ENV "production"}}
+      <p>I will disappear on production builds</p>
+      {{/isnt}}
       <br />
+      {{> states}}
     </main>
   {{/content}}
 {{/extend}}
