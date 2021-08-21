@@ -2,22 +2,21 @@
 bodyclass: index
 language: en
 meta:
-  author: Author Name
-  description: Some meta description
+  author: Kirill Efimov
+  description: Sign in page
 scripts:
   - ../typescript/index.ts
 stylesheets:
+  - ../scss/global.scss
   - ../scss/index.scss
-title: Index | Parcel Bundler With Handlebars
+title: Sign in
 uri: /
 ---
 
 {{#extend "base"}}
   {{#content "main"}}
     <main>
-      <h1>Welcome from index.hbs</h1>
-      <a href="./about.hbs">about page</a>
-      <br />
+      {{> signin}}
     </main>
   {{/content}}
 {{/extend}}

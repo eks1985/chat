@@ -2,7 +2,7 @@ body {
     background-color: #fafafa;
 }
 
-.signin-container {
+.profile-container {
     // background-color: red;
     max-width: 360px;
     margin: 0 auto;
@@ -21,6 +21,18 @@ body {
 
 .center {
     text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.ml-2 {
+    margin-left: 16px;
 }
 
 
